@@ -1,0 +1,147 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 114px 64px 112px;
+  background-color: $colorBackgroundBlack;
+
+  h2 {
+    margin-bottom: 83px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $colorTextWhite;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    position: relative;
+    z-index: 10;
+
+    span {
+      color: $colorOrange;
+    }
+  }
+
+  .priceContainer {
+    margin-bottom: 47px;
+    display: flex;
+    align-items: center;
+    
+
+    .textPriceOld {
+      text-decoration: line-through;
+      color: $colorGrey;
+      margin-right: 32px;
+      font-size: 36px;
+      line-height: 1;
+    }
+
+    .textPriceNew {
+      color: $colorTextWhite;
+      font-size: 48px;
+      line-height: 1;
+    }
+  }
+
+  .imgGroup {
+    margin-bottom: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1090px;
+    width: 100%;
+  }
+
+  .description {
+    margin-bottom: 64px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 1090px;
+    width: 100%;
+
+    .textDescriptionLittle {
+      font-size: 18px;
+      line-height: 25px;
+      color: $colorTextWhite;
+      text-align: center;
+      max-width: 192px;
+      width: 1000%;
+      span {
+        color: $colorOrange;
+      }
+    }
+
+    .textDescriptionBig {
+      font-size: 36px;
+      line-height: 42px;
+      color: $colorTextWhite;
+      text-align: center;
+
+      span {
+        font-size: 24px;
+        line-height: 28px;
+        color: $colorOrange;
+      }
+    }
+  }
+
+  .btn {
+    padding: 19px 56px;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    background-color: $colorOrange;
+    color: #000;
+    border-radius: 7px;
+  }
+}
+
+@media all and (max-width: 984px) {
+  .container {
+    padding: 74px 44px 72px;
+
+    h2 {
+      margin-bottom: 45px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .priceContainer {
+      margin-bottom: 30px;
+
+      .textPriceOld {
+        font-size: 28px;
+      }
+  
+      .textPriceNew {
+        font-size: 32px;
+      }
+    }
+
+    .imgGroup {
+      flex-direction: column;
+    }
+  
+    .containerDescription {
+      display: flex;
+      min-height: 600px;
+    }
+  
+    .description {
+      padding: 55px 0 15px;
+      flex-direction: column;
+      align-items: center;
+
+      .textDescriptionBig {
+        font-size: 24px;
+        line-height: 30px;
+        span {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+
+}

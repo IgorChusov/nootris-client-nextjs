@@ -1,0 +1,31 @@
+.list {
+  display: flex;
+  height: 100%;
+  align-items: center;
+
+  li {
+    color: $colorTextWhite;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  li:not(:last-child) {
+    margin-right: 46px;
+  }
+}
+
+@media all and (max-width: 1368px) {
+  .list {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      color: #000
+    }
+
+    li:not(:last-child) {
+      margin-right: unset;
+      margin-bottom: 20px;
+    }
+  }
+}
